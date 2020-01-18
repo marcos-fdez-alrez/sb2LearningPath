@@ -1,0 +1,43 @@
+spring:
+  profiles:
+    active: dev
+
+server:
+  port : 7777
+
+default:
+  course:
+    name: Default Course
+    chapters: 7
+
+config:
+  firstProperty: sea
+  secondProperty: water
+  thirdProperty: 5
+  fourthProperty:
+logging:
+  level:
+    org.springframework.web:  debug
+    es.nom.marcosfernandez: info
+  file:
+    name: logging.log
+#  pattern:
+#    console:
+#    file:
+
+---
+spring:
+  profiles: dev
+
+server:
+  port : 7171
+
+default:
+  course:
+    name: Default Course Dev
+
+config:
+  firstProperty: seaDev
+  secondProperty: waterDev
+  thirdProperty: 1
+  fourthProperty: skyDev

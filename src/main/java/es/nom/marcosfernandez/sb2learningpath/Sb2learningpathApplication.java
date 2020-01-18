@@ -1,0 +1,26 @@
+package es.nom.marcosfernandez.sb2learningpath;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+
+@SpringBootApplication
+public class Sb2learningpathApplication {
+
+        /* To Tomcat's war
+        extends SpringBootServletInitializer {
+        */
+
+    public static void main(String[] args) {
+        SpringApplication.run(Sb2learningpathApplication.class, args);
+    }
+
+    /* To Tomcat's war
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
+        return super.configure(builder);
+    }
+    */
+
+}
